@@ -1,2 +1,2 @@
-\set var_value '\'' :my_param '\''
-SELECT * from pg_file_settings where name :var_value AS parameter_value;
+\prompt 'Введите имя параметра: ' param_name
+SELECT * FROM pg_file_settings WHERE name = :'param_name';
