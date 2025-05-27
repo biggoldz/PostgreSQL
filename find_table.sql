@@ -11,6 +11,6 @@ JOIN
 WHERE 
     c.relkind = 'r' 
     AND n.nspname NOT IN ('pg_catalog', 'information_schema')
-    AND c.relname LIKE :'%table_name%'
+    AND c.relname LIKE '%table_name%'
 ORDER BY 
     n.nspname, c.relname;
